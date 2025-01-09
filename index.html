@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emissão de Nota Fiscal de Serviços (NFS-e)</title>
+    <link rel="stylesheet" href="style.css"> <!-- Referência para o CSS -->
+</head>
+<body>
+
+<h2>Emissão de Nota Fiscal de Serviços (NFS-e)</h2>
+
+<form id="form">
+    <div class="form-group">
+        <label for="valorVenda">Valor da Venda (R$):</label>
+        <input type="number" id="valorVenda" required>
+    </div>
+    <div class="form-group">
+        <label for="itens">Itens Vendidos:</label>
+        <input type="text" id="itens" required>
+    </div>
+    <div class="form-group">
+        <label for="irpf">Porcentagem de Imposto (IRPF):</label>
+        <input type="number" id="irpf" required>
+    </div>
+    <div class="form-group">
+        <label for="pis">Porcentagem de Imposto (PIS):</label>
+        <input type="number" id="pis" required>
+    </div>
+    <div class="form-group">
+        <label for="cofins">Porcentagem de Imposto (COFINS):</label>
+        <input type="number" id="cofins" required>
+    </div>
+    <div class="form-group">
+        <label for="inss">Porcentagem de Imposto (INSS):</label>
+        <input type="number" id="inss" required>
+    </div>
+    <div class="form-group">
+        <label for="issqn">Porcentagem de Imposto (ISSQN):</label>
+        <input type="number" id="issqn" required>
+    </div>
+    <button type="submit">Emitir Nota Fiscal</button>
+</form>
+
+<div class="nota-fiscal" id="notaFiscal" style="display:none;">
+    <h3>Nota Fiscal de Serviços</h3>
+    <p><strong>Itens Vendidos:</strong> <span id="notaItens"></span></p>
+    <p><strong>Valor Total da Venda:</strong> R$ <span id="notaValorVenda"></span></p>
+    <p><strong>IRPF (R$):</strong> R$ <span id="notaIrpf"></span></p>
+    <p><strong>PIS (R$):</strong> R$ <span id="notaPis"></span></p>
+    <p><strong>COFINS (R$):</strong> R$ <span id="notaCofins"></span></p>
+    <p><strong>INSS (R$):</strong> R$ <span id="notaInss"></span></p>
+    <p><strong>ISSQN (R$):</strong> R$ <span id="notaIssqn"></span></p>
+    <p><strong>Total de Impostos:</strong> R$ <span id="notaTotalImpostos"></span></p>
+    <p><strong>Valor Líquido a Receber:</strong> R$ <span id="notaValorLiquido"></span></p>
+</div>
+
+<script src="script.js"></script> <!-- Referência para o JavaScript -->
+
+</body>
+</html>
