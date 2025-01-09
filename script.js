@@ -35,3 +35,4 @@ document.getElementById('form').addEventListener('submit', function(event) {
     document.getElementById('notaFiscal').style.display = 'block';
 });
 
+
